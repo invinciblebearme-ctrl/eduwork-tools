@@ -13,7 +13,7 @@ npm install
 npm run tauri:dev
 ```
 
-Windows v0.1.0 설치 파일은 `release-artifacts/v0.1.0/`에 있습니다. NSIS 설치 파일은 임시 위치에서 설치·실행·제거를 검증했습니다. MSI는 만들어졌지만 모든 사용자 설치에는 관리자 권한이 필요하며 실제 설치·제거는 검증되지 않았습니다. 설치 파일은 서명되지 않았습니다.
+[v0.1.0 Windows 설치 파일과 실행 파일은 GitHub Release](https://github.com/invinciblebearme-ctrl/eduwork-tools/releases/tag/v0.1.0)에서 받을 수 있습니다. NSIS 설치 파일은 임시 위치에서 설치·실행·제거를 검증했습니다. MSI는 만들어졌지만 모든 사용자 설치에는 관리자 권한이 필요하며 실제 설치·제거는 검증되지 않았습니다. 설치 파일은 서명되지 않았습니다.
 
 ## 2. 공통 사용 순서
 

@@ -80,5 +80,5 @@
 - 별도 Cargo target으로 Windows 실행 파일·NSIS·MSI 산출물을 만들고 `release-artifacts/v0.1.0/`에 복사했습니다. 실행 파일을 직접 열어 한국어 UI 렌더링을 확인했고, Authenticode 검사 결과 세 산출물 모두 `NotSigned`입니다.
 - NSIS 설치 파일은 scratch에 무인 설치·앱 실행·UI 렌더링·제거까지 확인했습니다. 제거 후 설치 폴더와 Uninstall 항목이 남지 않았고 `%LOCALAPPDATA%\kr.eduwork.tools\workflows.json`의 내용도 시험 전과 동일했습니다.
 - MSI 파일 형식 헤더와 admin image 추출을 확인했고 추출된 앱의 UI도 렌더링됐습니다. 일반 `/i` 설치는 종료 코드 1603, 로그의 Error 1925(모든 사용자 설치에 관리자 권한 필요)로 실패했습니다. 권한 상승은 하지 않았으므로 MSI의 실제 설치·제거는 미검증입니다.
-- 산출물 크기·SHA-256은 `release-artifacts/v0.1.0/SHA256SUMS.json`에 기록했습니다. Git remote가 없고 GitHub 계정에서 대응 저장소도 확인되지 않아 GitHub 게시를 하지 않았습니다. 프로젝트 파일은 Git에서 미추적 상태이며 공개/비공개 저장소 선택도 미확정입니다.
-- 릴리스 게이트는 아직 통과하지 않았습니다: 코드 서명/배포 정책, MSI 관리자 설치 검증, GitHub 저장소·가시성 결정이 남았습니다. LibreOffice 기반 문서 변환 UI 경로도 환경에 LibreOffice가 없어 미검증입니다.
+- 초기 로컬 검증 당시 Git remote가 없었고 프로젝트 파일은 미추적 상태였습니다. 이후 사용자가 공개 저장소 생성을 승인해 `invinciblebearme-ctrl/eduwork-tools`의 `main`에 소스 커밋을 게시하고 v0.1.0 Release를 공개했습니다. 설치 파일·실행 파일·안내·SHA-256 manifest 총 5개 자산을 다시 내려받아 원격 바이너리의 크기와 SHA-256을 로컬 manifest와 대조했습니다.
+- 릴리스 게이트는 아직 모두 통과하지 않았습니다: 코드 서명, 라이선스 지정, MSI 관리자 설치 검증이 남았습니다. LibreOffice 기반 문서 변환 UI 경로도 환경에 LibreOffice가 없어 미검증입니다.

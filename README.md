@@ -39,6 +39,10 @@ npm install
 npm run tauri:dev
 ```
 
+## Windows 다운로드
+
+[v0.1.0 Windows Release](https://github.com/invinciblebearme-ctrl/eduwork-tools/releases/tag/v0.1.0)에서 설치 파일과 실행 파일을 받을 수 있습니다. NSIS 설치는 설치·실행·제거까지 확인했습니다. MSI는 관리자 권한 설치가 필요하며 실제 설치·제거는 미검증입니다. 세 바이너리는 서명되지 않았습니다.
+
 ## 검증
 
 ```powershell
@@ -69,4 +73,4 @@ cargo fmt --check
 
 출력은 완성된 같은 폴더 임시 파일을 동기화한 뒤 덮어쓰기 없이 원자적으로 게시합니다. 출력 종류·확장자와 템플릿 필드를 실행 전에 검증하고, 실패 기록 및 최근 200회 보존을 테스트합니다. 여러 출력 중 일부 완료는 기록에서 별도로 표시합니다. 취소와 백분율 진행률은 여전히 제공하지 않습니다.
 
-[한국어 릴리스 준비 체크리스트와 Windows 수동 회귀 절차](docs/RELEASE_READINESS.md)에 런타임 의존성, 개인정보 처리, 로컬 저장 경로, 백업/복원 및 남은 제한을 정리했습니다. Rust 테스트 61개와 Cargo/npm 검증이 통과했습니다. Windows v0.1.0 산출물은 `release-artifacts/v0.1.0/`에 있습니다. NSIS 설치·실행·제거는 검증됐고, MSI는 빌드·압축 해제 및 앱 실행까지 확인했지만 관리자 권한 설치는 미검증입니다. 세 바이너리 모두 서명되지 않았고 LibreOffice 문서 변환 경로도 미검증입니다.
+[한국어 릴리스 준비 체크리스트와 Windows 수동 회귀 절차](docs/RELEASE_READINESS.md)에 런타임 의존성, 개인정보 처리, 로컬 저장 경로, 백업/복원 및 남은 제한을 정리했습니다. Rust 테스트 61개와 Cargo/npm 검증이 통과했습니다. NSIS 설치·실행·제거는 검증됐고, MSI는 빌드·압축 해제 및 앱 실행까지 확인했지만 관리자 권한 설치는 미검증입니다. 세 바이너리 모두 서명되지 않았고 LibreOffice 문서 변환 경로도 미검증입니다.
